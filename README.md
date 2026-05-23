@@ -3,7 +3,7 @@ Supplementary code for the study “Modeling the functional capabilities of the 
 This repository contains all scientific code used for the complex wing case presented in the paper. <br> <br>
 **Results Data Files** <br> <br>
 Due to GitHub file size limitations, existing results files are not hosted in this repository. Find existing results data files at https://huggingface.co/datasets/NIEckstein/batWingSensoryHairs <br>
-Download that repository and this repository to the same folder to run any code from this repository using our existing results files. 
+Download that repository and this repository to the same folder to run any code from this repository using our existing results files. <br> <br>
 **Results generating codes:** <br> <br>
 **“root_buildAWing.m”** sets up a wing model and generates perturbations of the empirical kinematic data found in the folder, “batData”. This script sets all geometric parameters, but it does not set material/aerodynamic properties.  <br> 
 **“root_simulateBatWing.m”** reads a setup file produced by “root_buildAWing.m” and does the simulation, simulating each perturbed trajectory in parallel on separate CPU cores. Material and aerodynamic properties are set in the beginning of the script before simulation.   <br> 
